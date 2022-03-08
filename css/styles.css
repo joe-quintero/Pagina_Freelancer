@@ -1,0 +1,17 @@
+html{
+	font-size: 62.5%; /*se reinica el tamaño del documento*/
+}
+
+body{
+	font-size: 16px; /* Estas dos primeras lineas hacen que los rem sean sencillos de usar */
+	}				/*1rem = 10px */
+
+
+h1{
+	text-align: center;
+	font-size: 3.8rem;
+}
+
+span{
+	font-size: 2rem;
+}
