@@ -7,13 +7,25 @@ body{
 	}				/*1rem = 10px */
 
 
-h1{
+.titulo{
 	text-align: center;
 	font-size: 3.8rem;
 }
 
-span{
+h1.titulo span{ 			/* Este selector es ams especifico, ya que esta tomando la clase titulo de la etiqueta h1 */
+	font-size: 2rem;		/* En este caso el orden no hace nada debido a que es mas sespecifico que el selector de abajo */
+	color: red;
+
+}
+
+.titulo span{  				/*Emjeplo de especificidad*/
 	font-size: 2rem;
+	color: blue;
 }
 
 /*Comentario Prueba Git*/
+
+span{
+	font-size: 2rem;
+	color: violet !important;  /* este important le pasa por encima a todas las otars declaraciones, por importancia NO RECOMENDADO */
+}
