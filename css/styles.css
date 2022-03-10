@@ -40,6 +40,16 @@ span{
 	color: violet !important;  /* este important le pasa por encima a todas las otars declaraciones, por importancia NO RECOMENDADO 
 }*/
 
-.navegacion-principal{
+.nav-bg{
 	background-color: var(--azul);
+}
+
+.contenedor{
+	width: 120rem;
+	margin: 0 auto 0 auto; /*top,right,bottom,left*/
+  /*margin: 0 auto; --> En este caso aplicaria ya que por default css toma el primero valor como top y bottom y el segundo valor como right y left*/
+}
+
+.navegacion-principal{
+	
 }
