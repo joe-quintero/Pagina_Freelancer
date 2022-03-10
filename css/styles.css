@@ -50,6 +50,6 @@ span{
   /*margin: 0 auto; --> En este caso aplicaria ya que por default css toma el primero valor como top y bottom y el segundo valor como right y left*/
 }
 
-.navegacion-principal{
-	
-}
+.navegacion-principal a{
+	display: inline; /*Todos los elemoentos tienen el display declarado con un valor por defaul, algunos con block o otros son inline*/
+}					/*La direcencia entre block y inline es que los block se coloca cada elemento debajo del otro, miestras que inline se van colocando a lado*/
