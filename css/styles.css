@@ -39,3 +39,7 @@ span{
 	font-size: 2rem;
 	color: violet !important;  /* este important le pasa por encima a todas las otars declaraciones, por importancia NO RECOMENDADO 
 }*/
+
+.navegacion-principal{
+	background-color: var(--azul);
+}
