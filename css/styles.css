@@ -45,17 +45,20 @@ span{
 }
 
 .contenedor{
-	width: 120rem;
-	margin: 0 auto 0 auto; /*top,right,bottom,left*/
+	width: 100rem;
+	margin: 0 auto ; /*top,right,bottom,left*/
   /*margin: 0 auto; --> En este caso aplicaria ya que por default css toma el primero valor como top y bottom y el segundo valor como right y left*/
 }
 
 .navegacion-principal a{
-	display: inline; /*Todos los elemoentos tienen el display declarado con un valor por defaul, algunos con block o otros son inline*/
-					/*La direcencia entre block y inline es que los block se coloca cada elemento debajo del otro, miestras que inline se van colocando a lado*/}
+	/*display: inline; Todos los elemoentos tienen el display declarado con un valor por defaul, algunos con block o otros son inline*/
+					/*La direcencia entre block y inline es que los block se coloca cada elemento debajo del otro, miestras que inline se van colocando a lado*/
+	color: var(--blanco);
+	text-decoration: none;
+}				
 
 .navegacion-principal{
-	padding-top: 5rem; /*funciona igual quel margin, solo que este engorda el elemento, la separacion la hace hacia adentro */
+	padding: 1rem; /*funciona igual quel margin, solo que este engorda el elemento, la separacion la hace hacia adentro */
   /*margin-top: 10rem;*/	/*Separa el elemento colocando ina distancia de 10rem desde el elemento de arriba hasta el mismo*/
 
 
