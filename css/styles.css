@@ -71,3 +71,16 @@ span{
 	color: var(--negro);
 
 }
+
+@media (min-width: 480px){ /*Este codigo se aplica usando operador ">" quiere decir que todo el codigo CSS se va a aplicar cuando la resolucion sea > 480px*/
+	body{
+		background-color: blue;
+	}
+}
+
+@media (min-width: 768px){ 
+	body{
+	background-color: red;
+	}
+}
+
