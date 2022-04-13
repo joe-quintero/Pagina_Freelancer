@@ -45,7 +45,7 @@ span{
 }
 
 .contenedor{
-	max-width: 100rem;
+	max-width: 90rem;
 	margin: 0 auto ; /*top,right,bottom,left*/
   /*margin: 0 auto; --> En este caso aplicaria ya que por default css toma el primero valor como top y bottom y el segundo valor como right y left*/
 }			
@@ -79,4 +79,9 @@ span{
 	color: var(--negro);
 }
 
+.hero{
+	background-image: url(../img/hero1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
