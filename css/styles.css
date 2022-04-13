@@ -45,20 +45,28 @@ span{
 }
 
 .contenedor{
-	width: 100rem;
+	max-width: 100rem;
 	margin: 0 auto ; /*top,right,bottom,left*/
   /*margin: 0 auto; --> En este caso aplicaria ya que por default css toma el primero valor como top y bottom y el segundo valor como right y left*/
 }			
 
 .navegacion-principal{
 	display: flex; /*este atributo nos habilita poder usar flexbox en el elemento donde se usa esta clase*/
-	justify-content: space-between; /*El contenido se distribuye*/
-
+	flex-direction: column;
 }	
+
+@media (min-width: 400px){ /*480px (celular), 768px (tablet), 1140px (pc laptop) y 1400px (tv)*/
+	.navegacion-principal{
+		flex-direction: row;
+		justify-content: space-between; /*El contenido se distribuye*/
+	}
+}
 
 .navegacion-principal a{
 	/*display: inline; Todos los elemoentos tienen el display declarado con un valor por defaul, algunos con block o otros son inline*/
 					/*La direcencia entre block y inline es que los block se coloca cada elemento debajo del otro, miestras que inline se van colocando a lado*/
+	display: block;
+	text-align: center;
 	color: var(--blanco);
 	text-decoration: none;
 	font-weight: bold;
