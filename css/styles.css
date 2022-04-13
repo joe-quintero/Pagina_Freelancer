@@ -69,18 +69,6 @@ span{
 .navegacion-principal a:hover { /*el :hover es una pseudo-clase que se activa al interactar con el elemento, en este caso con el enlace de la clase*/
 	background-color: var(--amarillo);
 	color: var(--negro);
-
 }
 
-@media (min-width: 480px){ /*Este codigo se aplica usando operador ">" quiere decir que todo el codigo CSS se va a aplicar cuando la resolucion sea > 480px*/
-	body{
-		background-color: blue;
-	}
-}
-
-@media (min-width: 768px){ 
-	body{
-	background-color: red;
-	}
-}
 
