@@ -9,6 +9,11 @@
 
 html{
 	font-size: 62.5%; /*se reinica el tamaño del documento*/
+  	box-sizing: border-box; /*Al definir un tamaño para algo y aplicar pading no agranda la imagen o el objeto*/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body{
