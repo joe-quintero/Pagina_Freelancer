@@ -63,7 +63,27 @@ span{
 	max-width: 90rem;
 	margin: 0 auto ; /*top,right,bottom,left*/
   /*margin: 0 auto; --> En este caso aplicaria ya que por default css toma el primero valor como top y bottom y el segundo valor como right y left*/
-}			
+}
+
+.boton{
+	background-color: var(--azul);
+	color: var(--blanco);
+	padding: 1rem 3rem;
+	margin-top: 2rem;
+	font-size: 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: .5rem;
+	width: 90%;
+	text-align: center;
+}
+
+@media (min-width: 700px){
+	.boton{
+		width: auto;
+	}
+}
 
 .navegacion-principal{
 	display: flex; /*este atributo nos habilita poder usar flexbox en el elemento donde se usa esta clase*/
