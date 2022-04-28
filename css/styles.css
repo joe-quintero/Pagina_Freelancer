@@ -19,14 +19,24 @@ html{
 body{
 	font-size: 16px;						/* Estas dos primeras lineas hacen que los rem sean sencillos de usar */
 	font-family: 'Mukta', sans-serif;		/*1rem = 10px */
-	}	
+	}
 
-
-.titulo{
-	text-align: center;
+h1{
 	font-size: 3.8rem;
-
 }
+
+h2{
+	font-size: 2.8rem;
+}
+
+h3{
+	font-size: 1.8rem;
+}
+
+h1,h2,h3{
+	text-align: center;
+}
+
 
 /*h1.titulo span{ 			/* Este selector es ams especifico, ya que esta tomando la clase titulo de la etiqueta h1 */
 	/*font-size: 2rem;		En este caso el orden no hace nada debido a que es mas sespecifico que el selector de abajo 
@@ -96,10 +106,21 @@ span{
 .contenido-hero{
 	position: absolute;
 	background-color: rgba(0,0,0, .7); /*anterior*/
-	background-color: rgb(0 0 0 / 50%);
-	width: 2rem;
-	height: 2rem;
+	background-color: rgb(0 0 0 / 50%); /*Nueva forma*/
 	width: 100%;
 	height: 100%;	
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
+.contenido-hero h2,
+.contenido-hero p{
+	color: var(--blanco);
+}
+
+.ubicacion{
+	display: flex;
+}
