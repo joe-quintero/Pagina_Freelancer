@@ -6,7 +6,7 @@
 	--gris: #757575;
 }
 
-
+/*GLOBALES*/
 html{
 	font-size: 62.5%; /*se reinica el tamaño del documento*/
   	box-sizing: border-box; /*Al definir un tamaño para algo y aplicar pading no agranda la imagen o el objeto*/
@@ -20,44 +20,6 @@ body{
 	font-size: 16px;						/* Estas dos primeras lineas hacen que los rem sean sencillos de usar */
 	font-family: 'Mukta', sans-serif;		/*1rem = 10px */
 	}
-
-h1{
-	font-size: 3.8rem;
-}
-
-h2{
-	font-size: 2.8rem;
-}
-
-h3{
-	font-size: 1.8rem;
-}
-
-h1,h2,h3{
-	text-align: center;
-}
-
-
-/*h1.titulo span{ 			/* Este selector es ams especifico, ya que esta tomando la clase titulo de la etiqueta h1 */
-	/*font-size: 2rem;		En este caso el orden no hace nada debido a que es mas sespecifico que el selector de abajo 
-	color: red;
-}*/
-
-.titulo span{  				/*Emjeplo de especificidad*/
-	text-align: center;
-	font-size: 2rem;
-}
-
-/*Comentario Prueba Git*/
-/*
-span{
-	font-size: 2rem;
-	color: violet !important;  /* este important le pasa por encima a todas las otars declaraciones, por importancia NO RECOMENDADO 
-}*/
-
-.nav-bg{
-	background-color: var(--azul);
-}
 
 .contenedor{
 	max-width: 90rem;
@@ -83,6 +45,48 @@ span{
 	.boton{
 		width: auto;
 	}
+}
+
+/*TIPOGRAFIA*/
+h1{
+	font-size: 3.8rem;
+}
+
+h2{
+	font-size: 2.8rem;
+}
+
+h3{
+	font-size: 1.8rem;
+}
+
+h1,h2,h3{
+	text-align: center;
+}
+
+
+/*h1.titulo span{ 			/* Este selector es ams especifico, ya que esta tomando la clase titulo de la etiqueta h1 */
+	/*font-size: 2rem;		En este caso el orden no hace nada debido a que es mas sespecifico que el selector de abajo 
+	color: red;
+}*/
+
+/*TOTILOS*/
+.titulo span{  				/*Emjeplo de especificidad*/
+	text-align: center;
+	font-size: 2rem;
+}
+
+/*Comentario Prueba Git*/
+/*
+span{
+	font-size: 2rem;
+	color: violet !important;  /* este important le pasa por encima a todas las otars declaraciones, por importancia NO RECOMENDADO 
+}*/
+
+
+/*NAVEGACION*/
+.nav-bg{
+	background-color: var(--azul);
 }
 
 .navegacion-principal{
@@ -114,6 +118,7 @@ span{
 	color: var(--negro);
 }
 
+/*HERO*/
 .hero{
 	background-image: url(../img/hero1.jpg);
 	background-repeat: no-repeat;
@@ -141,6 +146,6 @@ span{
 	color: var(--blanco);
 }
 
-.ubicacion{
+.contenido-hero-ubicacion{
 	display: flex;
 }
