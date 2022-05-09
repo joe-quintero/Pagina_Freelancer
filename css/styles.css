@@ -4,9 +4,10 @@
 	--amarillo: #FFC433;
 	--blanco: #FFFFFF;
 	--gris: #757575;
+	--fondo1:#DCE5FF;
 }
 
-/*GLOBALES*/
+/*GLOBALES-----------------------------------------------------------------------------------------------------*/
 html{
 	font-size: 62.5%; /*se reinica el tamaño del documento*/
   	box-sizing: border-box; /*Al definir un tamaño para algo y aplicar pading no agranda la imagen o el objeto*/
@@ -19,6 +20,7 @@ html{
 body{
 	font-size: 16px;						/* Estas dos primeras lineas hacen que los rem sean sencillos de usar */
 	font-family: 'Mukta', sans-serif;		/*1rem = 10px */
+	background-image: linear-gradient(to top, var(--fondo1) 0%, var(--blanco) 100%);
 	}
 
 .contenedor{
@@ -26,7 +28,7 @@ body{
 	margin: 0 auto ; /*top,right,bottom,left*/
   /*margin: 0 auto; --> En este caso aplicaria ya que por default css toma el primero valor como top y bottom y el segundo valor como right y left*/
 }
-
+          
 .boton{
 	background-color: var(--azul);
 	color: var(--blanco);
@@ -47,7 +49,7 @@ body{
 	}
 }
 
-/*TIPOGRAFIA*/
+/*TIPOGRAFIA-----------------------------------------------------------------------------------------------------*/
 h1{
 	font-size: 3.8rem;
 }
@@ -70,7 +72,7 @@ h1,h2,h3{
 	color: red;
 }*/
 
-/*TOTILOS*/
+/*TITULOS-----------------------------------------------------------------------------------------------------*/
 .titulo span{  				/*Emjeplo de especificidad*/
 	text-align: center;
 	font-size: 2rem;
@@ -84,7 +86,7 @@ span{
 }*/
 
 
-/*NAVEGACION*/
+/*NAVEGACION-----------------------------------------------------------------------------------------------------*/
 .nav-bg{
 	background-color: var(--azul);
 }
@@ -118,7 +120,7 @@ span{
 	color: var(--negro);
 }
 
-/*HERO*/
+/*HERO-----------------------------------------------------------------------------------------------------*/
 .hero{
 	background-image: url(../img/hero1.jpg);
 	background-repeat: no-repeat;
