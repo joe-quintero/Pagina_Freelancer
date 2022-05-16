@@ -172,6 +172,7 @@ span{
 	grid-template-columns: 1fr 1fr 1fr; /*Tres francciones de un entero*/
 	grid-template-columns: repeat(3, 1fr); /*=1fr 1fr 1fr*/
 	/*grid-template-columns: 1fr 1fr 2fr; 25% 25% 50%*/
+	column-gap: 2rem;
 }
 }
 
