@@ -161,3 +161,17 @@ span{
 .contenido-hero-ubicacion{
 	display: flex;
 }
+
+/*SERVICIOS-----------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 700px){
+	.servicios{
+	display: grid;
+/*	grid: 300px 800px / 300px 300px; */	
+/*	grid-template-columns: 33.33% 33.33% 33.33%;*/
+	grid-template-columns: 1fr 1fr 1fr; /*Tres francciones de un entero*/
+	grid-template-columns: repeat(3, 1fr); /*=1fr 1fr 1fr*/
+	/*grid-template-columns: 1fr 1fr 2fr; 25% 25% 50%*/
+}
+}
+
