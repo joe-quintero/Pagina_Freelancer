@@ -173,6 +173,33 @@ span{
 	grid-template-columns: repeat(3, 1fr); /*=1fr 1fr 1fr*/
 	/*grid-template-columns: 1fr 1fr 2fr; 25% 25% 50%*/
 	column-gap: 2rem;
+	}
 }
+
+.servicio{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+.servicio h3{
+	color: var(--azul);
+	font-weight: normal;
+}
+
+.servicio p{
+	line-height: 1,5;
+}
+
+.servicios .iconos{
+	height: 10rem;
+	width: 10rem;
+	background-color: var(--amarillo);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
 
