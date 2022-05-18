@@ -249,8 +249,17 @@ span{
 	text-align: center;
 }
 
-.contenedor-campos{
-
+@media (min-width: 700px){
+	.contenedor-campos{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto 20rem;
+		column-gap: 1rem;
+	}
+	.campos:nth-child(3),
+	.campos:nth-child(4){ /*nth-child tiene como funcion si hay carias claes que se llaman igual, con el numero comenzando del 1 se elige a que aplicarle el codigo*/
+			grid-column: 1 / 3 ;
+	}
 }
 
 .campos{
@@ -265,6 +274,10 @@ span{
 	display: block;
 }
 
+.campos textarea{
+	height: 20rem;
+}
+
 .campos input[type="text"], textarea,
 .campos input[type="tel"],
 .campos input[type="email"]{
@@ -274,6 +287,8 @@ span{
 	border-radius: .5rem;
 }
 
-.enviar .boton{
-	width: 100%;
+/*footer-----------------------------------------------------------------------------------------------------*/
+
+.footer{
+	text-align: center;
 }
