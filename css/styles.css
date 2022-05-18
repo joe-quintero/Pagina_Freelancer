@@ -41,6 +41,11 @@ body{
 	border-radius: .5rem;
 	width: 90%;
 	text-align: center;
+	border: none;
+}
+
+.boton:hover{
+	cursor: pointer;
 }
 
 @media (min-width: 700px){
@@ -94,11 +99,31 @@ span{
 	color: violet !important;  /* este important le pasa por encima a todas las otars declaraciones, por importancia NO RECOMENDADO 
 }*/
 
+/*UTILIDADES-----------------------------------------------------------------------------------------------------*/
 
-/*NAVEGACION-----------------------------------------------------------------------------------------------------*/
 .nav-bg{
 	background-color: var(--azul);
 }
+
+.w-100{
+	width: 100%;
+}
+
+@media (min-width: 700px){
+	.w-100{
+	width: auto;
+}
+}
+
+.flex{
+	display: flex;
+}
+
+.alinear-boton{
+	justify-content: flex-end;
+}
+
+/*NAVEGACION-----------------------------------------------------------------------------------------------------*/
 
 .navegacion-principal{
 	display: flex; /*este atributo nos habilita poder usar flexbox en el elemento donde se usa esta clase*/
@@ -222,8 +247,33 @@ span{
 	font-weight: 700;
 	margin-bottom: 2rem;
 	text-align: center;
+}
 
+.contenedor-campos{
 
 }
 
+.campos{
+	margin-bottom: 1rem;
 
+}
+
+.campos label{
+	color: var(--blanco);
+	font-weight: bold;
+	margin-bottom: .5rem;
+	display: block;
+}
+
+.campos input[type="text"], textarea,
+.campos input[type="tel"],
+.campos input[type="email"]{
+	width: 100%;
+	border: none;
+	padding: 1rem;
+	border-radius: .5rem;
+}
+
+.enviar .boton{
+	width: 100%;
+}
