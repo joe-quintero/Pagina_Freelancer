@@ -10,7 +10,17 @@
 /*GLOBALES-----------------------------------------------------------------------------------------------------*/
 html{
 	font-size: 62.5%; /*se reinica el tamaño del documento*/
-  	box-sizing: border-box; /*Al definir un tamaño para algo y aplicar pading no agranda la imagen o el objeto*/
+  box-sizing: border-box; /*Al definir un tamaño para algo y aplicar pading no agranda la imagen o el objeto*/
+  scroll-snap-type: y mandatory;
+}
+
+/*Sroll Snap-----------------------------------------------------------------------------------------------------*/
+
+.navegacion-principal,
+.servicios,
+.formulario{
+	scroll-snap-align: center;
+	scroll-snap-stop: always	;
 }
 
 *, *:before, *:after {
@@ -121,6 +131,7 @@ span{
 
 .alinear-boton{
 	justify-content: flex-end;
+	margin-top: 1rem;
 }
 
 /*NAVEGACION-----------------------------------------------------------------------------------------------------*/
